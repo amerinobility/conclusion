@@ -1,0 +1,21 @@
+{
+  "name": "work1",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "compression": "^1.7.4",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.15.5",
+    "express-session": "^1.15.6",
+    "morgan": "~1.9.0",
+    "mysql": "^2.16.0",
+    "request": "^2.88.0",
+    "serve-favicon": "~2.4.5"
+  }
+}

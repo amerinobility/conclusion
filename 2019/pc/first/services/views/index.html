@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dva Demo</title><link href="./stylesheets/index.css" rel="stylesheet"></head><body><script>(function (doc, win) {
+      var docEl = doc.documentElement,
+        resizeEvt = 'onorientationchange' in window ? 'onorientationchange' : 'resize',
+        recalc = function () {
+          var clientWidth = docEl.clientWidth;
+          if (!clientWidth) return;
+          if (clientWidth >= 1024) {
+            docEl.style.fontSize = parseFloat(100 * 1024 * 2 / 750) + 'px';
+          } else {
+            docEl.style.fontSize = parseFloat(100 * clientWidth * 2 / 750) + 'px';
+          }
+        };
+
+      if (!doc.addEventListener) return;
+      win.addEventListener(resizeEvt, recalc, false);
+      doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);</script><div id="root"></div><script src="./javascripts/index.js" charset="utf-8"></script></body></html>

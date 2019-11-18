@@ -1,0 +1,138 @@
+.contains{
+	width: 100%;
+	color: white;
+}
+.contains::after{
+	content: "";
+	overflow: hidden;
+	float: none;
+}
+.nav_left{
+	width: 18%;
+	border:none;
+	background: #2a2d33;
+	margin-top: 50px;
+	position: fixed;
+}
+.nav_list{
+	background: #303641;
+	padding: 20px;
+}
+.nav_list img{
+	width: 50px;height: 50px;border-radius: 50%;vertical-align: middle;
+}
+.nav_list span {
+	display: inline-block;
+	padding-left: 20px;
+	font-size: 20px;
+}
+.nav_slideshow span{
+	display: inline-block;
+	color:orange;
+	margin: 15px 0 0 25px;
+	font-size: 14px;
+}
+.nav_images{
+	height: 50px;
+	width: 100%;
+}
+.nav_images>.label{
+	border-radius: 50%;
+	padding: 5px;
+	width: 45px;
+	height: 30px;
+	background: black;
+	margin:10px 0 10px  25px;
+	float: left;
+	text-align: center;
+}
+.nav_images>.label:hover{
+	background: orange;
+}
+.nav_images>.label a{
+	text-decoration: none;
+	color:white;
+}
+.middle{
+	float: left;
+	width: 70%;
+	border:none;
+	color:black;
+	background: #efefef;
+	padding: 0 20px;
+	margin-top: 50px;
+}
+.section_header,.section_content{
+	width: 100%;
+	background: white;
+	height: 100%;
+	overflow: hidden;	
+	margin:30px 0;
+	display: flex;align-items: center;justify-content: center;
+}
+.section_header p{
+	width: 50%;height: 100%;line-height: 50px;
+}
+.section_header p:nth-child(1){text-align: right;color: green;font-size: 20px;}
+.section_header p:nth-child(2){
+	width: 50%;height: 100%;line-height: 50px;text-align: right;opacity: .7;padding-top: 15px;
+}
+.section_content p{
+	line-height: 30px;text-indent: 2em;font-size: 16px;padding:15px;
+}
+.section_header_content{
+	width: 100%;height: 100%;
+}
+.nav_right{
+	float:right;
+	width: 82%;
+	overflow: hidden;
+}
+.nav_right1{
+	float: right;
+	width: 24%;
+	margin-top: 50px;
+}
+.right_cell{
+	position: relative;
+}
+.right_title{
+	position: absolute;
+	width: 90%;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	bottom: 12px;
+	display: none;
+	color: white;
+	background: black;
+	opacity: .7;
+}
+.nav_right1 img{
+	display: inline-block;
+	width: 90%;height: 100px;margin: 12px 0;border:0;
+}
+.color{
+	background: skyblue;
+}
+table{
+	table-layout: fixed;
+    color: #333333;
+    margin-bottom: 0px;
+        width: 100%;
+    max-width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+th{
+	border-bottom: 1px dashed black;
+overflow: hidden; /*自动隐藏文字*/
+text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+white-space: nowrap;/*强制不换行*/
+}
+tr th:nth-child(4):hover{
+	color:red;cursor: pointer;
+}
+tr th:nth-child(5):hover{
+	color:red;cursor: pointer;
+}

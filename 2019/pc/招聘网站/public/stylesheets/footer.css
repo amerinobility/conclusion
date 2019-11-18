@@ -1,0 +1,56 @@
+.footer{
+    clear: both;
+	position: relative;
+	bottom: 0px;
+	width: 100%;
+	height: 200px;
+	background: black;
+	opacity: 0.7;
+	text-align: center;
+	color: white;
+}
+.footer p{
+	position: absolute;
+	right: 0px;
+	top: 10px;
+	font-size: 14px;
+}
+.footer p img{
+	width: 50px;
+	height: 50px;
+}
+.link a{
+    margin-left:200px;
+    color: red;
+}
+.footer a{
+	position: absolute;
+	top:30px;
+	right: 10px;
+}
+.footer table{
+	position:absolute;
+	left:20px;
+	top:0px;
+}
+.useless{
+    float:left;
+	width: 300px;
+	height: 200px;
+	line-height: 200px;
+    text-align: center;
+    margin-right: 30px;
+}
+.useless ul{
+	width: 300px;
+	height: 100px;
+	margin-top: 50px;
+	border-right: 2px solid red;
+}
+.useless li{
+	margin-top: 5px;
+    width: 300px;
+    height: 30px;
+    line-height: 30px;
+	list-style: none;
+}

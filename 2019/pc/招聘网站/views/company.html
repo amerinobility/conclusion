@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>人才招聘网站</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compaptible" content="ie=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="招聘，人才">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/head.css">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/person.css">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/footer.css">
+</head>
+<body>
+<header>
+	<div class="header">
+		<div class="header_1">
+			<img src="/images/2.jpg">
+			<span>你离理想的工作只差一个网站</span>
+		</div>
+		<div class="header_3">
+				<a href="/recruitment">发布职位</a>
+			    <a href="/">主界面</a>
+		</div>
+		<div class="header_2">
+			<input type="text" name="" placeholder="请输入职位......" maxlength="10" pattern="/^\w+$/" id="text">
+			<input type="button" name="" value="搜索" id="select">
+			<div id="relative"></div>
+		</div>
+	</div>
+</header>
+<div class="section">
+	<img src="/images/main1.jpg">
+</div>
+<main>
+<nav>
+	<ul>
+		<li>
+			<img src="/images/2.jpg">
+		</li>
+		<li>个人资料</li>
+		<li>我的发布</li>
+		<li>用户投递</li>
+		<li id="quit">退出</li>
+	</ul>
+</nav>
+<article>
+	<section>
+		<ul>
+			<li>
+				<label>用户名:</label>
+				<input type="text" name="" placeholder="请输入14位用户名......" maxlength="14" />
+			</li>
+			<li>
+				<label>密码:</label>
+				<input type="password" name="" placeholder="请输入密码......" maxlength="12" />
+			</li>
+			<li>
+				<label>公司名:</label>
+				<input type="text" name="" placeholder="请输入公司名......" maxlength="12"/>
+			</li>
+			<li>
+				<label>城市:</label>
+				<input type="text" name="" placeholder="请输入城市......" maxlength="12"/>
+			</li>
+			<li>
+				<label>排名:</label>
+				<input type="text" name="" placeholder="请输入排名......" maxlength="12"/>
+			</li>
+			<li>
+				<label>类型:</label>
+				<input type="text" name="" placeholder="请输入类型......" maxlength="12"/>
+			</li>
+			<br/><br/><br/><br/>
+			<li>
+				<label>介绍:</label>
+				<textarea placeholder="请输入公司介绍......." maxlength="5000"></textarea>
+			</li>
+			<br/><br/><br/><br/>
+			<li>
+				<input type="button" name="" value="修改" />
+			</li>
+		</ul>
+	</section>
+	<section class="hidden">
+		<div class="title">我的发布</div>
+		<div class="section_content">
+			<table>
+				<tbody>
+					<tr>
+						<th>岗位名</th>
+						<th>待遇</th>
+						<th>人数</th>
+						<th>宣传地点</th>
+						<th>时间</th>
+						<th>操作</th>
+					</tr>
+				</tbody>
+			</table>
+			<div class="section_bottom">
+				<ul>
+					<div class="page" value="3">
+						<li><input type="button" name="lastPage" value="上一页" data="-1"></li>
+					<li><input type="button" name="nextPage" value="下一页" data="1"></li>
+					</div>
+					<li><input type="text" name="value"  placeholder="0" number="0" big="2"></li>
+					<li><input type="button" name="skin" value="跳转"></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section class="hidden">
+		<div class="title">用户投递</div>
+		<div class="section_content">
+			<table>
+				<tbody>
+					<tr>
+						<th>岗位</th>
+						<th>数量</th>
+						<th>时间</th>
+						<th>操作</th>
+						<th>操作</th>
+					</tr>
+				</tbody>
+			</table>
+			<div class="section_bottom">
+				<ul>
+					<div class="page" value="3">
+						<li><input type="button" name="lastPage" value="上一页" data="-1"></li>
+					<li><input type="button" name="nextPage" value="下一页" data="1"></li>
+					</div>
+					<li><input type="text" name="value"  placeholder="0" number="0" big="2"></li>
+					<li><input type="button" name="skin" value="跳转"></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+</article>
+</main>
+<div class="footer">
+    <a href="http://www.baidu.com">帮助</a>
+    <p>电话号码：15549068673</p>
+    <div class="useless">
+        <ul>
+            <li>欢迎来到</li>
+            <li>我的界面</li>
+            <li>我是你们</li>
+        </ul>
+    </div>
+        <div class="useless">
+        <ul>
+            <li>你们的好朋友</li>
+            <li>华英雄</li>
+            <li>华仔</li>
+        </ul>
+    </div>
+        <div class="useless">
+        <ul>
+            <li>世界有趣点</li>
+            <li>非常完美</li>
+            <li>点击登录</li>
+        </ul>
+    </div>
+</div><!-- 底部 -->
+<script src="/javascripts/jquery-3.2.1.min.js"></script>
+<script src="/javascripts/cookie.js"></script>
+<script src="/javascripts/company.js"></script>
+<script type="text/javascript" src="/javascripts/select.js"></script>
+<!-- 引入 gt.js，既可以使用其中提供的 initGeetest 初始化函数 -->
+</body>
+
+</html>

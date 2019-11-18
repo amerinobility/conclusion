@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>人才招聘网站</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compaptible" content="ie=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="招聘，人才">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/administrator.css">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/footer.css">
+</head>
+<body>
+<div class="section">
+	<img src="/images/main1.jpg">
+</div>
+<main>
+<nav>
+	<ul>
+		<li>
+			<img src="/images/2.jpg">
+		</li>
+		<li>个人资料</li>
+		<li>公告</li>
+		<li>用户信息</li>
+		<li>企业信息</li>
+		<li>简历信息</li>
+		<li>招聘信息</li>
+		<li id="quit">退出</li>
+	</ul>
+</nav>
+<article>
+	<section>
+		<ul>
+			<li>
+				<label>用户名:</label>
+				<input type="text" name="" placeholder="请输入10位用户名......" />
+			</li>
+			<li>
+				<label>密码:</label>
+				<input type="password" name="" placeholder="请输入密码......" />
+			</li>
+			<li>
+				<label>昵称:</label>
+				<input type="text" name="" placeholder="请输入昵称......" />
+			</li>
+			<li>
+				<input type="button" name="" value="修改"/>
+			</li>
+		</ul>
+	</section>
+	<section>
+		<ul>
+			<li>
+				<label>标题:</label>
+				<input type="text" name="" placeholder="请输入标题......" />
+			</li>
+			<li>
+				<label>内容:</label>
+				<input type="text" name="" placeholder="请输入内容......" />
+			</li>
+			<li>
+				<input type="button" name="" value="修改"/>
+			</li>
+		</ul>
+	</section>
+	<section class="hidden">
+		<div class="title">
+			<div class="header">
+			<input type="text" name="" placeholder="请输入职位......" maxlength="10" pattern="/^\w+$/" class="text">
+			<input type="button" name="" value="搜索" class="select">
+		</div>
+		</div>
+		<div class="section_content">
+			<table>
+				<tbody>
+					<tr>
+						<th>用户ID</th>
+						<th>用户名</th>
+						<th>密码</th>
+						<th>昵称</th>
+						<th>操作</th>
+					</tr>
+				</tbody>
+			</table>
+			<div class="section_bottom">
+				<ul>
+					<div class="page" value="0">
+						<li><input type="button" name="lastPage" value="上一页" data="-1"></li>
+					<li><input type="button" name="nextPage" value="下一页" data="1"></li>
+					</div>
+					<li><input type="text" name="value"  placeholder="0" number="0" big="2"></li>
+					<li><input type="button" name="skin" value="跳转"></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section class="hidden">
+		<div class="title">
+			<div class="header">
+			<input type="text" name="" placeholder="请输入职位......" maxlength="10" pattern="/^\w+$/" class="text">
+			<input type="button" name="" value="搜索" class="select">
+		</div>
+		</div>
+		<div class="section_content">
+			<table>
+				<tbody>
+					<tr>
+						<th>公司ID</th>
+						<th>用户名</th>
+						<th>密码</th>
+						<th>公司名</th>
+						<th>操作</th>
+					</tr>
+				</tbody>
+			</table>
+			<div class="section_bottom">
+				<ul>
+					<div class="page" value="1">
+						<li><input type="button" name="lastPage" value="上一页" data="-1"></li>
+					<li><input type="button" name="nextPage" value="下一页" data="1"></li>
+					</div>
+					<li><input type="text" name="value"  placeholder="0" number="0" big="2"></li>
+					<li><input type="button" name="skin" value="跳转"></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section class="hidden">
+		<div class="title">
+			<div class="header">
+			<input type="text" name="" placeholder="请输入职位......" maxlength="10" pattern="/^\w+$/" class="text">
+			<input type="button" name="" value="搜索" class="select">
+		</div>
+		</div>
+		<div class="section_content">
+			<table>
+				<tbody>
+					<tr>
+						<th>用户名</th>
+						<th>姓名</th>
+						<th>类型</th>
+						<th>phone</th>
+						<th>操作</th>
+					</tr>
+				</tbody>
+			</table>
+			<div class="section_bottom">
+				<ul>
+					<div class="page" value="2">
+						<li><input type="button" name="lastPage" value="上一页" data="-1"></li>
+					<li><input type="button" name="nextPage" value="下一页" data="1"></li>
+					</div>
+					<li><input type="text" name="value"  placeholder="0" number="0" big="2"></li>
+					<li><input type="button" name="skin" value="跳转"></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section class="hidden">
+		<div class="title">
+			<div class="header">
+			<input type="text" name="" placeholder="请输入职位......" maxlength="10" pattern="/^\w+$/" class="text">
+			<input type="button" name="" value="搜索" class="select">
+		</div>
+		</div>
+		<div class="section_content">
+			<table>
+				<tbody>
+					<tr>
+						<th>公司ID</th>
+						<th>岗位ID</th>
+						<th>公司名</th>
+						<th>岗位名</th>
+						<th>操作</th>
+					</tr>
+				</tbody>
+			</table>
+			<div class="section_bottom">
+				<ul>
+					<div class="page" value="3">
+						<li><input type="button" name="lastPage" value="上一页" data="-1"></li>
+					<li><input type="button" name="nextPage" value="下一页" data="1"></li>
+					</div>
+					<li><input type="text" name="value"  placeholder="0" number="0" big="2"></li>
+					<li><input type="button" name="skin" value="跳转"></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+</article>
+</main>
+
+<script src="/javascripts/jquery-3.2.1.min.js"></script>
+<!-- 引入 gt.js，既可以使用其中提供的 initGeetest 初始化函数 -->
+<script src="/javascripts/cookie.js"></script>
+
+<script type="text/javascript" src="/javascripts/administrator.js"></script>
+</body>
+
+</html>
+<!-- file:///F:/sublineText3/xml/bysj/js/GUI.js -->
+<!-- file:///F:/js/GUI.js --><!-- 
+file:///F:/sublineText3/xml/bysj/html/js/GUI.js -->

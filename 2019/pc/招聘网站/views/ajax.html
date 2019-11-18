@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>人才招聘网站</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compaptible" content="ie=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="招聘，人才">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/head.css">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/ajax.css">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/footer.css">
+</head>
+<body>
+<header>
+	<div class="header">
+		<div class="header_1">
+			<img src="/images/2.jpg">
+			<span>你离理想的工作只差一个网站</span>
+		</div>
+		<div class="header_3">
+				<a href="/">首页</a>
+				<a href="/GUI.html">登录</a>
+		</div>
+		<div class="header_2">
+			<input type="text" name="" placeholder="请输入职位......" maxlength="10" pattern="/^\w+$/" id="text">
+			<input type="button" name="" value="搜索" id="select">
+			<div id="relative"></div>
+		</div>
+	</div>
+</header>
+<div class="contains">
+	<nav class="nav_left" >
+	<div class="nav_list">
+		<img src="./images/2.jpg">
+		<span>hi,<%= title%></span>
+	</div>
+	<div class="nav_slideshow">
+		<span>热门关键词：</span>
+	</div>
+	<div class="nav_images">
+
+	</div>
+</nav>
+<div class="nav_right">
+	<div class="middle">
+			<div class="section_header">
+				<div class="section_row">
+					<div class="section_title">职位类别:</div>
+					<div class="section_content">
+						<a href="javascript:;" class="color">不限</a>
+				</div></div>
+				<div class="section_row">
+					<div class="section_title">涉及城市:</div>
+					<div class="section_content">
+						<a href="javascript:;" class="color">不限</a>
+				</div>
+				</div>
+			</div>
+		<div class="section_header">
+			<div class="section_middle_top">
+				<div class="left">搜索类别：
+					<a href="">校园招聘</a></div>
+					<a href="" class="right">更多搜索结果</a>
+			</div>
+			<div class="section_middle_down">
+				<table>
+					<tbody>
+						<tr>
+							<th>标题</th>
+							<th>文章标签</th>
+							<th>涉及城市</th>
+						</tr>
+						<% for(var i=0;i<result.length;i++){%>
+						<tr>
+						<th>
+						<a href="/communication?companyID=<%= result[i].companyID %>"><%= result[i].companyName %></a>
+
+						</th>
+						<th><%= result[i].positionName %></th>
+							<th><%= result[i].city %></th>
+
+				</tr>
+				<% } %>
+					</tbody>
+				</table>
+			</div>
+			<div class="section_bottom">
+				<ul>
+					<div class="page">
+						<li><input type="button" name="lastPage" value="上一页" data="-1"></li>
+					<li><input type="button" name="nextPage" value="下一页" data="1"></li>
+					</div>
+					<li><input type="text" name="value" number='<%= number%>' big='<%= maxNumber%>' placeholder="0"></li>
+					<li><input type="button" name="skin" value="跳转"></li>
+				</ul>
+			</div>
+		</div>
+		</div>
+<div class="nav_right1">
+	<div>您也许喜欢</div>
+	<div class="right_cell">
+		<a href="">
+			<img src="./images/2.jpg">
+		</a>
+		<div class="right_title">
+			<a href="">宣传会</a>
+		</div>
+	</div>
+	<div class="right_cell">
+		<a href="">
+			<img src="./images/2.jpg">
+		</a>
+		<div class="right_title">
+			<a href="">宣传会</a>
+		</div>
+	</div>
+	<div class="right_cell">
+		<a href="">
+			<img src="./images/2.jpg">
+		</a>
+		<div class="right_title">
+			<a href="">宣传会</a>
+		</div>
+	</div>
+	<div class="right_cell">
+		<a href="">
+			<img src="./images/2.jpg">
+		</a>
+		<div class="right_title">
+			<a href="">宣传会</a>
+		</div>
+	</div>
+	
+</div>
+</div>
+</div>
+<div class="footer">
+    <a href="http://www.baidu.com">帮助</a>
+    <p>电话号码：15549068673</p>
+    <div class="useless">
+        <ul>
+            <li>欢迎来到</li>
+            <li>我的界面</li>
+            <li>我是你们</li>
+        </ul>
+    </div>
+        <div class="useless">
+        <ul>
+            <li>你们的好朋友</li>
+            <li>华英雄</li>
+            <li>华仔</li>
+        </ul>
+    </div>
+        <div class="useless">
+        <ul>
+            <li>世界有趣点</li>
+            <li>非常完美</li>
+            <li>点击登录</li>
+        </ul>
+    </div>
+</div><!-- 底部 -->
+<script src="/javascripts/jquery-3.2.1.min.js"></script>
+<!-- 引入 gt.js，既可以使用其中提供的 initGeetest 初始化函数 -->
+<script src="/javascripts/gt.js"></script>
+<script type="text/javascript" src="/javascripts/ajax.js"></script>
+<script type="text/javascript" src="/javascripts/select.js"></script>
+</body>
+
+</html>
+<!-- file:///F:/sublineText3/xml/bysj/js/GUI.js -->
+<!-- file:///F:/js/GUI.js --><!--
+file:///F:/sublineText3/xml/bysj/html/js/GUI.js -->
